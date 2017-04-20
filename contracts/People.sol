@@ -11,7 +11,7 @@ contract People {
 
 	}
 
-	function addPerson(bytes32 _firstName, bytes32 _lastName, uint _age) returns (bool success) {
+	function addPersonself(bytes32 _firstName, bytes32 _lastName, uint _age) returns (bool success) {
 
 		Person memory newPerson;
 		//new stack
@@ -27,7 +27,7 @@ contract People {
 	}
 
 
-	function getPeople() constant returns (bytes32[], bytes32[],uint[]) {
+	function getPeopleself() constant returns (bytes32[], bytes32[],uint[]) {
 //in solidity is a prblem without any fixed string
 	
 		uint length = people.length;	
